@@ -19,8 +19,8 @@ This is an optimized version of a script i made to contol my windows pc with hom
 
 ## Usage
 ### Quickstart
-Basic usage for an instance runnig on port `8080`:
-`main.py -p 8081 -i 0.0.0.0 -c commands.json`
+Basic usage for an instance runnig on port `8081`:
+```main.py -p 8081 -i 0.0.0.0 -c commands.json```
 
 ### Arguments
 ```
@@ -38,8 +38,5 @@ Basic usage for an instance runnig on port `8080`:
 
 ### Commands.json
 
-|Key|Description|
-----------------
-|test|test|
 
 
