@@ -23,9 +23,11 @@
             "name": "test",
             "command": "echo",
             "args": [
-                "Hello World 2"
+                "$PWD"
             ],
-            "token": "1234567890"
+            "directory": "/tmp",
+            "token": "1234567890",
+            "webhook": "http://localhost:8080"
         }
     ]
 }
