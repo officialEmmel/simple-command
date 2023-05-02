@@ -1,0 +1,31 @@
+{
+    "commands": [
+        {
+            "name": "Hello World",
+            "command": "echo",
+            "args": [
+                "Hello World"
+            ],
+            "dir": "/tmp",
+            "env": {
+                "PATH": "/usr/local/bin:/usr/bin:/bin"
+            },
+            "ip_whitelist": [
+                "127.0.0.1"
+            ],
+            "ip_blacklist": [
+                "192.168.178.123"
+            ],
+            "token": "1234567890",
+            "description": "This is a description"
+        },
+        {
+            "name": "test",
+            "command": "echo",
+            "args": [
+                "Hello World 2"
+            ],
+            "token": "1234567890"
+        }
+    ]
+}
