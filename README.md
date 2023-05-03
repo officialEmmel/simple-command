@@ -50,11 +50,11 @@ Basic usage for an instance runnig on port 8081:
 
 ### Modules
 I made some modules that can be executed with the `-m`-arg. Example: `main.py -m module-name`.
-You can pass args like that `main.py -m "print 'hello world'`
+You can pass args like that `main.py -m "print 'hello world'"`
 
 |Module|Description|
 |---|---|
 |`token`|Small helper to generate a 32-character url-safe token.|
-|`alert <message>|A script to show an alert on pc (windows only)|
+|`alert <message>`|A script to show an alert on pc (windows only)|
 
 Custom modules can be put in the /module folder. The script executes its ```python main()```-function
