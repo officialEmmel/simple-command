@@ -38,8 +38,8 @@ Basic usage for an instance runnig on port 8081:
 ### Commands.json
 | Key | Description | Example |
 |---|---|---|
-|`name`|(required) URL-Safe Name of command  | `"name":"test-command"|
-|`command`|(required) Command to be executed| `"command":"echo $FOO"|
+|`name`|(required) URL-Safe Name of command  | `"name":"test-command"`|
+|`command`|(required) Command to be executed| `"command":"echo $FOO"`|
 |`environment`|Array of environment vars.| `"environment":{"FOO":"bar"}`|
 |`directory`|Directory the command will be executed in|`"directory":"/tmp"`|
 |`token`|Token the user must authenticate in order ro execute the command. Tip: generate a token with the `token`-module |`"token":"abc123"`|
