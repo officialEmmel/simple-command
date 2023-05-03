@@ -36,10 +36,16 @@ Basic usage for an instance runnig on port 8081:
 ```
 
 ### Commands.json
-| Key | Description |   
-|---|---|
-|`name`|(required) URL-Safe Name of command  |
-|`command`|(required) Command to be executed|
-|`environment`|Array of environment vars. e.g: ```json "environment":{"FOO":"bar"}```   |
+| Key | Description | Example |
+|---|---|---|
+|`name`|(required) URL-Safe Name of command  | `"name":"test-command"|
+|`command`|(required) Command to be executed| `"command":"echo $FOO"|
+|`environment`|Array of environment vars.| `"environment":{"FOO":"bar"}`|
+|`directory`|Directory the command will be executed in|`"directory":"/tmp"`|
+|`token`|Token the user must authenticate in order ro execute the command. Tip: generate a token with the `token`-module |`"token":"abc123"`|
+|`ip_whitelist`|Array of IPs that can execute the command|`"ip_whitelist":["10.0.123.65"]`|
+|`ip_blacklist`|Array of IPs that cant access the command|`"ip_blacklist":["10.0.246.187"]`|
+|`description`|Small description of the commmand|`"description":"this is a description"`|
+|`webhook`|Webhook that gets called on every execution|`"webhook":"http://localhost:8080"`|
 
-
+### Modules
